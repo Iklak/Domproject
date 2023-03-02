@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="domProject.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Counter App</h1>
+        <div>
+            <button id="decrement">Decrement by 1</button>
+            <span id="display">0</span>
+            <button id="increment">Increament by 1</button>
+        </div>
+        <button id="reset">Reset Value</button>
+    </div>
+    <script>
+        var incrementbtn=document.querySelector("#increment");
+        var displayValue=document.querySelector("#display");
+        var decrementValue=document.querySelector("#decrement");
+
+        var reset=document.querySelector("#reset");
+let cons=0;
+        incrementbtn.addEventListener('click',function(){
+            cons=cons+1;
+            displayValue.innerHTML=cons;
+
+        });
+        
+        decrementValue.addEventListener('click',function(){
+            cons=cons-1;
+            if(cons>0){
+                displayValue.innerHTML=cons;
+            }else{
+                alert(" not define")
+            }
+
+        });
+
+        reset.addEventListener('click',function(){
+            cons=0;
+            displayValue.innerHTML=cons;
+        })
+
+         
+    </script>
+</body>
+
+</html>

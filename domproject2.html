@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 50px;
+            height: 50px;
+            background-color: aquamarine;
+        }
+        .btn{
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1><span>Dom project</span> </h1>
+    <div></div>
+    <button class="btn" dubbleclick="">Don't press me</button>
+
+    <buttom id="btn-2"  onclick="about()">onclik Button</buttom>
+    <script>
+        var hed=document.querySelector("h1");
+        var div1=document.querySelector("div")
+
+        div1.addEventListener('mouseover',function(){
+           
+            hed.innerText="Mouse one the function";
+        });
+        div1.addEventListener('mouseout',function(){
+            hed.innerHTML="mouse has left the box";
+        });
+         hed.addEventListener('mouseover', function(){
+            hed.innerHTML="mose on the heading";
+         });
+
+         
+
+
+         function about(){
+            alert(" should i know you");
+         }
+
+        
+         
+
+    </script>
+</body>
+</html>
